@@ -1,0 +1,15 @@
+<nav class="nav">
+    <a href="/">Home</a>
+    <a href="/about-us">About Us</a> 
+    <a href="/contact">Contact</a>    
+    {{#if isStudentLoggedIn}}
+        <a href="/student-dashboard">Dashboard</a>
+        <a href="/student-logout">Logout</a>
+    {{else if isTeacherLoggedIn}}
+        <a href="/teacher-dashboard">Dashboard</a>
+        <a href="/teacher-logout">Logout</a>
+    {{else}}
+        <a class="forteachersonly" href="/teacher-login">teacher-login</a>
+    {{/if}}
+
+</nav>

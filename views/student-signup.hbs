@@ -1,0 +1,25 @@
+<div class="form-container">
+    <h3>Student Signup</h3>
+    <form id="student-signup-form" action="/student-signup" method="POST">
+        <label for="student-email">Email:</label>
+        <input type="email" id="student-email" name="email" required>
+
+        <label for="student-password">Password:</label>
+        <input type="password" id="student-password" name="password" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirmPassword" required>
+
+        <label for="student-phone">Phone:</label>
+        <input type="text" id="student-phone" name="phone" required>
+
+        <label for="student-address">Address:</label>
+        <input type="text" id="student-address" name="address" required>
+
+        <label for="student-class">Class:</label>
+        <input type="text" id="student-class" name="class" required>
+
+        <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="/student-login">Login</a></p>
+</div>

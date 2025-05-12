@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Logout Option -->
+    <div class="logout-option" style="position: absolute; top: 20px; left: 20px;">
+        <a href="/logout" style="text-decoration: none; color: red;">Logout</a>
+    </div>
+
+    <!-- Top Section: Class, Subject, Location Filters -->
+    <div class="filter-section">
+        <select id="class-select">
+            <option value="" disabled selected>Select Class</option>
+            <option value="class-1">Class 1</option>
+            <option value="class-2">Class 2</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <select id="subject-select">
+            <option value="" disabled selected>Select Subject</option>
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <!-- Add more subjects as needed -->
+        </select>
+
+        <select id="location-select">
+            <option value="" disabled selected>Select Location</option>
+            <option value="location-1">Location 1</option>
+            <option value="location-2">Location 2</option>
+            <!-- Add more locations as needed -->
+        </select>
+
+        <button onclick="filterTeachers()">Search</button>
+    </div>
+
+    <!-- Teachers List -->
+    <div class="teachers-list">
+        <div class="teacher-card">
+            <img src="https://via.placeholder.com/150" alt="Teacher Image">
+            <div class="teacher-info">
+                <h3>Teacher Name</h3>
+                <p>Price: $20/hour</p>
+                <p>Timing: 9 AM - 12 PM</p>
+                <p>Contact: <a href="mailto:teacher@example.com">teacher@example.com</a></p>
+            </div>
+        </div>
+
+        <!-- Add more teacher cards as needed -->
+        <div class="teacher-card">
+            <img src="https://via.placeholder.com/150" alt="Teacher Image">
+            <div class="teacher-info">
+                <h3>Teacher Name</h3>
+                <p>Price: $25/hour</p>
+                <p>Timing: 1 PM - 4 PM</p>
+                <p>Contact: <a href="mailto:anotherteacher@example.com">anotherteacher@example.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="student-script.js"></script>
+</body>
+</html>
